@@ -1,0 +1,37 @@
+_id: req_4480039661544b3aae361588f83d2062
+type: Request
+parentId: fld_952919f5229f46f1ad40b682b8c38b1a
+modified: 1652190816447
+created: 1652185853265
+url: https://olm-efm-ecm.olmstaging.com/integration/graphql
+name: paymentRemittanceOverviewLite
+description: ""
+method: POST
+body:
+  mimeType: application/graphql
+  text: '{"query":"# Write your query or mutation
+    here\n{\n  offeringCatalogueItemTypePurchaseOption (id:5488)
+    {\n\t\tstatus\n\t\toffering
+    {\n\t\t\tid\n\t\t\tdateCreated\n\t\t\tstatus\n\t\t\tcatalogueItemType
+    {\n\t\t\t\tid\n\t\t\t\tdescription\n\t\t\t\tcatalogueItemClass\n\t\t\t}\n\t\t\teffectiveFrom\n\t\t\ttoDate\n\t\t\t\n\t\t}\n\t\tcostLines
+    {\n\t\t\tid\n\t\t\tstatus\n\t\t\tpayeeType\n\t\t\tcreateFromDate\n\t\t\tcreatedUpToDate\n\t\t}\n    catalogueItemTypePurchaseOption{\n      id\n\t\t\tisDefaultForProvision\n\t\t\tdefaultPayeeType\n\t\t\tstatus\n\t\t\tpurchaseOption
+    {\n\t\t\t\tname\n\t\t\t\trateType\n\t\t\t\tstatus\n\t\t\t\tcostingLevel\n\t\t\t\trecurrenceUnit\n\t\t\t\tdefaultPayeeType\n\t\t\t}\n\t\t\tcatalogueItemType
+    {\n\t\t\t\tdescription\n\t\t\t\tcatalogueItemClass\n\t\t\t\tprovisionType\n\t\t\t\tprovisionSubjectType\n\t\t\t\tpurchaseOptionTypes\n\t\t\t\tstatus\n\t\t\t}\n\t\t\tcostAmounts
+    {\n\t\t\t\teffectiveFrom\n\t\t\t\ttoDate\n\t\t\t\tcostedItem
+    {\n\t\t\t\t\t__typename\n\t\t\t\t}\n\t\t\t}\n    }\n  }\n}"}'
+parameters: []
+headers:
+  - name: Content-Type
+    value: application/json
+    id: pair_5af7fde8ed09442c92c3cc5b091c7939
+authentication:
+  type: bearer
+  token: eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiIsImtpZCI6ImpTMVhvMU9XRGpfNTJ2YndHTmd2UU8yVnpNYyJ9.eyJhdWQiOiI4MzcwMzVmMi05MjU1LTRlMDUtYWY0YS01N2I3ZmY3MGVkMGYiLCJpc3MiOiJodHRwczovL2xvZ2luLm1pY3Jvc29mdG9ubGluZS5jb20vNDg2NWZmNGUtYTg0ZS00OWNhLWE1YTYtM2JjOWU4MjNlYjg3L3YyLjAiLCJpYXQiOjE2NTIxODU1ODUsIm5iZiI6MTY1MjE4NTU4NSwiZXhwIjoxNjUyMTkwMzQ0LCJhaW8iOiJBWFFBaS84VEFBQUFudU1DZEF5dk80V0pSOXlmNG1NakhMVWNrbktGWlpvbTNYcUgxVDFUMEJKMnhOQ3BYdUw5S2pyZVJXZTdNaE50QWcrOXFZVHp6STBFY2I5WGVodHFZNE1wMkUyQm1PSExVLzVDK3ZvUVBCZWN5L0xUdTVUSjl6YXJLT2xsUjF1U0FQakp6YWpmSU9xWVd0WmRCei9XZGc9PSIsImF6cCI6IjgzNzAzNWYyLTkyNTUtNGUwNS1hZjRhLTU3YjdmZjcwZWQwZiIsImF6cGFjciI6IjAiLCJpZHAiOiJodHRwczovL3N0cy53aW5kb3dzLm5ldC9jYmM0Mjc2Ni00MDBjLTQwOTYtYTg2Ny0yMTQ2Njk1MmRhY2EvIiwibmFtZSI6IlRhbnZlZXIgSG9xdWUiLCJvaWQiOiIzYjZmZjI4ZS1hNjY3LTQ4ZGUtOWI5YS00NzRhMjYzM2IwZDEiLCJwcmVmZXJyZWRfdXNlcm5hbWUiOiJ0YW52ZWVyLmhvcXVlQG9sbWdyb3VwLmNvbSIsInJoIjoiMC5BWG9BVHY5bFNFNm95a21scGp2SjZDUHJoX0kxY0lOVmtnVk9yMHBYdF85dzdROTZBTEEuIiwic2NwIjoiRWNsaXBzZS5BcGkiLCJzdWIiOiJqRVVNVzNmRXppTkdyTXpnVm5JLUczMkppdmpuM1kwNnotM2xwWGVobGFrIiwidGlkIjoiNDg2NWZmNGUtYTg0ZS00OWNhLWE1YTYtM2JjOWU4MjNlYjg3IiwidXRpIjoiQ044a3U3cUlBRW0tTXUwTDhWc05BQSIsInZlciI6IjIuMCJ9.e9VQ8Ububj7LBh7ySUAE754N0DJalyqorXChrgNjzgYMRWfv71Rlc-HHl4EPU1Rl_agxAECL-sHfCpodnmggcmRKpzzJSyqYwkqjRDvMQQW7KtgwCjdauYgtWa7iNT0-cnLfYClvkDRSXGGw_EA7r3G7obQ07qEXAVF4oCcEajpueAEma6hytWla4TsBWK8VzDzt1oOqKxuCLxvX6QEGKCnbFMnmHwnVWmmGjUO4DFeo1njxblHfPS8ftGn36i8aXGZrF0g6ZjnHM6P4VtOsvtSBZvyGVwBKThGIaWwk7shqWJIIq_f-64tUVrTXB7wfLZN0KEMxpoFsk19jINu4-Q
+metaSortKey: -1651069913567.5312
+isPrivate: false
+settingStoreCookies: true
+settingSendCookies: true
+settingDisableRenderRequestBody: false
+settingEncodeUrl: true
+settingRebuildPath: true
+settingFollowRedirects: global

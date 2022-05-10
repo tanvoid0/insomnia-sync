@@ -1,0 +1,30 @@
+_id: req_b33efd9935004184ac3038f152fd7f14
+type: Request
+parentId: fld_b04385e8783e476cb69cfa2f32247b92
+modified: 1651075701161
+created: 1651070077090
+url: localhost:4000/integration/graphql
+name: Daisy Local
+description: ""
+method: GET
+body:
+  mimeType: application/graphql
+  text: '{"query":"{\n    provision(id: 2)
+    {\n        id\n        status\n        statusUpdateSecurityUser
+    {\n            name\n        }\n        statusUpdateDate\n        costLines
+    {\n            status\n            statusUpdateDate\n            statusUpdateSecurityUser
+    {\n                name\n            }\n        }\n    }\n}"}'
+parameters: []
+headers:
+  - name: Content-Type
+    value: application/json
+    id: pair_5af7fde8ed09442c92c3cc5b091c7939
+authentication: {}
+metaSortKey: -1651069907870.25
+isPrivate: false
+settingStoreCookies: true
+settingSendCookies: true
+settingDisableRenderRequestBody: false
+settingEncodeUrl: true
+settingRebuildPath: true
+settingFollowRedirects: global

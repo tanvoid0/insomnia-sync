@@ -1,0 +1,33 @@
+_id: req_b6f217054d924c5c97a049ffa5d5e3d4
+type: Request
+parentId: fld_352b5bc0120e48c284dace96fe317d67
+modified: 1652199144108
+created: 1651070967188
+url: https://olm-efm-ecm.olmstaging.com/integration/graphql
+name: paymentRemittanceOverviewsByPersonId
+description: ""
+method: POST
+body:
+  mimeType: application/graphql
+  text: '{"query":"{\n\tpaymentRemittanceOverviewsByPersonId (\n\t\tpersonId:
+    \"relationshipsrecording::efm::776\"\n\t) {\n\t\tcursor
+    {\n\t\t\tpageSize\n\t\t\tpageNumber\n\t\t\ttotalSize\n\t\t}\n\t\tresults
+    {\n\t\t\tid\n\t\t\tpayerName\n\t\t\ttotalAmount
+    {\n\t\t\t\tvalue\n\t\t\t\tcurrency\n\t\t\t}\n\t\t\tpaymentRun
+    {\n\t\t\t\tid\n\t\t\t\tactualExportDate\n\t\t\t\texportBatchNumber\n\t\t\t}\n\t\t}\n\t}\n}"}'
+parameters: []
+headers:
+  - name: Content-Type
+    value: application/json
+    id: pair_5af7fde8ed09442c92c3cc5b091c7939
+authentication:
+  type: bearer
+  token: eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiIsImtpZCI6ImpTMVhvMU9XRGpfNTJ2YndHTmd2UU8yVnpNYyJ9.eyJhdWQiOiI4MzcwMzVmMi05MjU1LTRlMDUtYWY0YS01N2I3ZmY3MGVkMGYiLCJpc3MiOiJodHRwczovL2xvZ2luLm1pY3Jvc29mdG9ubGluZS5jb20vNDg2NWZmNGUtYTg0ZS00OWNhLWE1YTYtM2JjOWU4MjNlYjg3L3YyLjAiLCJpYXQiOjE2NTIxOTg3OTcsIm5iZiI6MTY1MjE5ODc5NywiZXhwIjoxNjUyMjAzNzM1LCJhaW8iOiJBWFFBaS84VEFBQUFvZ3FhWFpjUHBQOHlHQTJDQU8zSDR3YmRpY2xhdEF5dWUxbXR1UzErVFFCTkdVWEJEOU9wRW5kWlV3ZXdXQnpIR2kzdUhiYWZ1c3RQUG5mOXJFM2t2RVVBa01TdTJDb2o2UEhickVHSmllNWtDbnpWTEk1aS9tUXJPNHZIUHNudWE0eld3eHk4QVY0akxwNGZWdVQ0L0E9PSIsImF6cCI6IjgzNzAzNWYyLTkyNTUtNGUwNS1hZjRhLTU3YjdmZjcwZWQwZiIsImF6cGFjciI6IjAiLCJpZHAiOiJodHRwczovL3N0cy53aW5kb3dzLm5ldC9jYmM0Mjc2Ni00MDBjLTQwOTYtYTg2Ny0yMTQ2Njk1MmRhY2EvIiwibmFtZSI6IlRhbnZlZXIgSG9xdWUiLCJvaWQiOiIzYjZmZjI4ZS1hNjY3LTQ4ZGUtOWI5YS00NzRhMjYzM2IwZDEiLCJwcmVmZXJyZWRfdXNlcm5hbWUiOiJ0YW52ZWVyLmhvcXVlQG9sbWdyb3VwLmNvbSIsInJoIjoiMC5BWG9BVHY5bFNFNm95a21scGp2SjZDUHJoX0kxY0lOVmtnVk9yMHBYdF85dzdROTZBTEEuIiwic2NwIjoiRWNsaXBzZS5BcGkiLCJzdWIiOiJqRVVNVzNmRXppTkdyTXpnVm5JLUczMkppdmpuM1kwNnotM2xwWGVobGFrIiwidGlkIjoiNDg2NWZmNGUtYTg0ZS00OWNhLWE1YTYtM2JjOWU4MjNlYjg3IiwidXRpIjoibFBjY1RCQnExRWFTczJmcmhfcUhBQSIsInZlciI6IjIuMCJ9.Ehm0CEGgTVIqq-WeYOUbGbTuJlDaLVXd8_dbUr87ZVQj1rVecQ41iNAkMCzKbbWJJXGfxHVMnFzZOWVfCYYWG9kEcUbVXrc5xp6xRfnWtIqECc9b9LdEtLL8-F0WoFQ6YSc1zWNGfRI49iAhiOQdgyYK7nJlriZD-O9cmtfM3Qp1063-LApzgVOLPmqL9zeUzzyhiZ1owLeRZDisTpX-_6ZSRQ3R43xu2AZ1ik3nyb0HWo_yNciGYW7Gv9Q8IZjJn2OP7D3CdI46jKftHq46AYzrEVLi2ip2XUNzgEDFqFlx20goWxGJ5ckTRVAsUpd00_gM60-uFEI9RdLC8UnxXQ
+metaSortKey: -1651069930659.375
+isPrivate: false
+settingStoreCookies: true
+settingSendCookies: true
+settingDisableRenderRequestBody: false
+settingEncodeUrl: true
+settingRebuildPath: true
+settingFollowRedirects: global

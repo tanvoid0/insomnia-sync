@@ -1,0 +1,66 @@
+_id: req_e753588520674755b42c93e2d00b5251
+type: Request
+parentId: fld_352b5bc0120e48c284dace96fe317d67
+modified: 1651146559105
+created: 1651073434412
+url: https://olm-efm-ecm.olmstaging.com/integration/graphql
+name: paymentRemittanceOverview
+description: ""
+method: POST
+body:
+  mimeType: application/graphql
+  text: '{"query":"{\n\tpaymentRemittanceOverview (\n\t\tid:
+    \"payment-service::efm::945\"\n\t)
+    {\n\t\tid\n            payerName\n            creditorReference\n            totalAmount
+    {\n              __typename\n\t\t\t\t\t\t\tcurrency\n\t\t\t\t\t\t\tvalue\n            }\n            payer
+    {\n                id\n                preferredAddress
+    {\n\t\t\t\t\t\t\t\t\ttype\n\t\t\t\t\t\t\t\t\tid\n\t\t\t\t\t\t\t\t\tobjectVersion\n\t\t\t\t\t\t\t\t\tsecurityMetaData
+    {\n\t\t\t\t\t\t\t\t\t\t__typename\n\t\t\t\t\t\t\t\t\t\tsecured\n\t\t\t\t\t\t\t\t\t\treadSummary\n\t\t\t\t\t\t\t\t\t\treadDetail\n\t\t\t\t\t\t\t\t\t\twrite\n\t\t\t\t\t\t\t\t\t\tadmin\n\t\t\t\t\t\t\t\t\t}\n\t\t\t\t\t\t\t\t\tusage\n\t\t\t\t\t\t\t\t\tstartDate
+    {\n\t\t\t\t\t\t\t\t\t\tlower\n\t\t\t\t\t\t\t\t\t\tupper\n\t\t\t\t\t\t\t\t\t\tmask\n\t\t\t\t\t\t\t\t\t\t__typename\n\t\t\t\t\t\t\t\t\t}\n\t\t\t\t\t\t\t\t\tendDate
+    {\n\t\t\t\t\t\t\t\t\t\tlower\n\t\t\t\t\t\t\t\t\t\tupper\n\t\t\t\t\t\t\t\t\t\tmask\n\t\t\t\t\t\t\t\t\t\t__typename\n\t\t\t\t\t\t\t\t\t}\n\t\t\t\t\t\t\t\t\tendReason\n\t\t\t\t\t\t\t\t\tpreferred\n                }\n                contacts
+    {\n                    id\n\t\t\t\t\t\t\t\t\tobjectVersion\n\t\t\t\t\t\t\t\t\tsecurityMetaData
+    {\n\t\t\t\t\t\t\t\t\t\t__typename\n\t\t\t\t\t\t\t\t\t\tsecured\n\t\t\t\t\t\t\t\t\t\treadSummary\n\t\t\t\t\t\t\t\t\t\treadDetail\n\t\t\t\t\t\t\t\t\t\twrite\n\t\t\t\t\t\t\t\t\t\tadmin\n\t\t\t\t\t\t\t\t\t}\n\t\t\t\t\t\t\t\t\tstartDate\n\t\t\t\t\t\t\t\t\tendDate\n\t\t\t\t\t\t\t\t\tcontactType\n\t\t\t\t\t\t\t\t\tcontactUsage\n\t\t\t\t\t\t\t\t\tpreferred\n\t\t\t\t\t\t\t\t\tsubject
+    {\n\t\t\t\t\t\t\t\t\t\t__typename\n\t\t\t\t\t\t\t\t\t\tid\n\t\t\t\t\t\t\t\t\t\ttype\n\t\t\t\t\t\t\t\t\t}\n                }\n            }\n            payee
+    {\n                __typename\n                id\n                ... on
+    FinanceProviderPayee {\n                    financeProvider
+    {\n                        __typename\n                        id\n                        ...
+    on PersonFinanceProvider
+    {\n                            id\n                            personDetails
+    {\n                                id\n                                title\n                                forename\n                                surname\n                                personIdentifier\n                                preferredAddress
+    {\n                                    id\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tobjectVersion\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tsecurityMetaData
+    {\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t__typename\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t}\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\ttype\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tusage\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tstartDate
+    {\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tlower\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tupper\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tmask\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t__typename\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t}\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tendDate
+    {\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tlower\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tupper\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tmask\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t__typename\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t}\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tendReason\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tpreferred\n                                }\n                            }\n                        }\n                    }\n                }\n                ...
+    on PersonThirdPartyPayee
+    {\n                    id\n                    person
+    {\n                        id\n                        title\n                        forename\n                        surname\n                        personIdentifier\n                        preferredAddress
+    {\n                            id\n\t\t\t\t\t\t\t\t\t\t\t\t\tobjectVersion\n\t\t\t\t\t\t\t\t\t\t\t\t\tsecurityMetaData
+    {\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t__typename\n\t\t\t\t\t\t\t\t\t\t\t\t\t\tsecured\n\t\t\t\t\t\t\t\t\t\t\t\t\t\treadSummary\n\t\t\t\t\t\t\t\t\t\t\t\t\t\treadDetail\n\t\t\t\t\t\t\t\t\t\t\t\t\t\twrite\n\t\t\t\t\t\t\t\t\t\t\t\t\t\tadmin\n\t\t\t\t\t\t\t\t\t\t\t\t\t}\n\t\t\t\t\t\t\t\t\t\t\t\t\ttype\n\t\t\t\t\t\t\t\t\t\t\t\t\tusage\n\t\t\t\t\t\t\t\t\t\t\t\t\tstartDate
+    {\n\t\t\t\t\t\t\t\t\t\t\t\t\t\tlower\n\t\t\t\t\t\t\t\t\t\t\t\t\t\tupper\n\t\t\t\t\t\t\t\t\t\t\t\t\t\tmask\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t__typename\n\t\t\t\t\t\t\t\t\t\t\t\t\t}\n\t\t\t\t\t\t\t\t\t\t\t\t\tendDate
+    {\n\t\t\t\t\t\t\t\t\t\t\t\t\t\tlower\n\t\t\t\t\t\t\t\t\t\t\t\t\t\tupper\n\t\t\t\t\t\t\t\t\t\t\t\t\t\tmask\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t__typename\n\t\t\t\t\t\t\t\t\t\t\t\t\t}\n\t\t\t\t\t\t\t\t\t\t\t\t\tendReason\n\t\t\t\t\t\t\t\t\t\t\t\t\tpreferred\n                        }\n                    }\n                }\n            }\n            paymentRun
+    {\n                id\n                exportBatchNumber\n                payFromDate\n                payUpToDate\n                actualExportDate\n            }\n            remittanceClientDetails
+    {\n                id\n                dateOfBirth\n                clientTotal
+    {\n                    currency\n\t\t\t\t\t\t\t\t\t\t\tvalue\n\t\t\t\t\t\t\t\t\t\t\t__typename\n                }\n                provisionSubject
+    {\n                    __typename\n                    ... on
+    PersonProvisionSubject
+    {\n                        id\n                        personDetails
+    {\n                            id\n                            title\n                            forename\n                            surname\n                            personIdentifier\n                        }\n                    }\n                }\n                remittanceTransactionDetails
+    {\n                    id\n                    provisionName\n                    purchaseOptionName\n                    rate
+    {\n                        currency\n\t\t\t\t\t\t\t\t\t\t\tvalue\n\t\t\t\t\t\t\t\t\t\t\t__typename\n                    }\n                    rateUnit\n                    numberOfUnits\n                    effectiveFrom\n                    toDate\n                    numberOfDays\n                    paymentType\n                    amountDue
+    {\n                        currency\n\t\t\t\t\t\t\t\t\t\t\tvalue\n\t\t\t\t\t\t\t\t\t\t\t__typename\n                    }\n                }\n\t\t}\n\t}\n}"}'
+parameters: []
+headers:
+  - name: Content-Type
+    value: application/json
+    id: pair_5af7fde8ed09442c92c3cc5b091c7939
+authentication:
+  type: bearer
+  token: eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiIsImtpZCI6ImpTMVhvMU9XRGpfNTJ2YndHTmd2UU8yVnpNYyJ9.eyJhdWQiOiI4MzcwMzVmMi05MjU1LTRlMDUtYWY0YS01N2I3ZmY3MGVkMGYiLCJpc3MiOiJodHRwczovL2xvZ2luLm1pY3Jvc29mdG9ubGluZS5jb20vNDg2NWZmNGUtYTg0ZS00OWNhLWE1YTYtM2JjOWU4MjNlYjg3L3YyLjAiLCJpYXQiOjE2NTExNDU3NTQsIm5iZiI6MTY1MTE0NTc1NCwiZXhwIjoxNjUxMTUwNjQ3LCJhaW8iOiJBWFFBaS84VEFBQUE0QW84ZXBhVXFBQVc5dGMxS2QxRnVuZnI2VyttcUxCb0p6d0JRT1JhSHg5bGtkdTgrT1JSNjhRaGNzZWVOYXlvc0JUb0FWSGVaN2JWRGZ1TjcrMmlFWjgraWFyNllBU2tkanpnNDBWcmZsSGp4bExxUHF2U2YwSjVaWEN6dTNPT3NuaXNPcFExYzJydFJaK0pyODlHZFE9PSIsImF6cCI6IjgzNzAzNWYyLTkyNTUtNGUwNS1hZjRhLTU3YjdmZjcwZWQwZiIsImF6cGFjciI6IjAiLCJpZHAiOiJodHRwczovL3N0cy53aW5kb3dzLm5ldC9jYmM0Mjc2Ni00MDBjLTQwOTYtYTg2Ny0yMTQ2Njk1MmRhY2EvIiwibmFtZSI6IlRhbnZlZXIgSG9xdWUiLCJvaWQiOiIzYjZmZjI4ZS1hNjY3LTQ4ZGUtOWI5YS00NzRhMjYzM2IwZDEiLCJwcmVmZXJyZWRfdXNlcm5hbWUiOiJ0YW52ZWVyLmhvcXVlQG9sbWdyb3VwLmNvbSIsInJoIjoiMC5BWG9BVHY5bFNFNm95a21scGp2SjZDUHJoX0kxY0lOVmtnVk9yMHBYdF85dzdROTZBTEEuIiwic2NwIjoiRWNsaXBzZS5BcGkiLCJzdWIiOiJqRVVNVzNmRXppTkdyTXpnVm5JLUczMkppdmpuM1kwNnotM2xwWGVobGFrIiwidGlkIjoiNDg2NWZmNGUtYTg0ZS00OWNhLWE1YTYtM2JjOWU4MjNlYjg3IiwidXRpIjoiWENPNVNHZU45MGFCMURTa3JxTVdBQSIsInZlciI6IjIuMCJ9.a2R_G5iMpOO1cQneLUtF094ngZujX85cpQwWioGgQpSdae7vm8cpjYOComEvtKK13uv_Y57TWBB_jO4hfauYxAxrRlwEA5ie_OlL9A2fCpfu7xzyTnTaMslUBNkpvQYzdu0uKbjvUmqDdqOHEFa5Opv-DUPbiOdjV56N9ATUBVz-dvn-kRLHW5hlRc2eC3_kWQFOB2B4cGdJSdM4YuKztsGM4wjYDykZ959y4FEIneIGD6n1_SWkaW1WdyimCWDHAkqH91hZIKtuBiZVdEhgSUVpqASTEpM-dcA9g-LTTE8BKIuLCZX9kUbiwBzMbMuSqnpwQWZ6UOx4PQPafvJ-hg
+metaSortKey: -1651069919264.8125
+isPrivate: false
+settingStoreCookies: true
+settingSendCookies: true
+settingDisableRenderRequestBody: false
+settingEncodeUrl: true
+settingRebuildPath: true
+settingFollowRedirects: global
